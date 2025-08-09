@@ -46,6 +46,42 @@ snapshell -signaled-a --room demo123 --server https://snapshell.onrender.com
 - **macOS**: Homebrew automatically installs OpenCV and other dependencies
 - **Webcam**: SnapShell requires a webcam to capture video
 - **Go**: Automatically installed as a build dependency
+- **Command Line Tools**: Up-to-date Xcode Command Line Tools
+
+## Troubleshooting
+
+### Command Line Tools Issue
+
+If you get an error about outdated Command Line Tools:
+
+```
+Error: Your Command Line Tools are too outdated.
+Update them from Software Update in System Settings.
+```
+
+**Solution:**
+```bash
+# Option 1: Update via System Settings
+# Go to System Settings > General > Software Update
+
+# Option 2: Manual update
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+
+# Then try installation again
+brew install --HEAD snapshell
+```
+
+### Build Issues
+
+If the installation fails:
+```bash
+# Clean and update Homebrew
+brew cleanup && brew update
+
+# Try with verbose output for debugging
+brew install --HEAD snapshell --verbose
+```
 
 ## Links
 
