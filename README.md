@@ -2,19 +2,26 @@
 
 This is the official [Homebrew](https://brew.sh) tap for [SnapShell](https://github.com/saswatsam786/snapshell) - a real-time ASCII video sharing application via WebRTC in your terminal.
 
-## Installation
+## Installation (Stable)
 
 ```bash
 # Add the tap
 brew tap saswatsam786/snapshell
 
-# Install SnapShell
+# Install SnapShell (stable tag v1.0.1)
 brew install snapshell
 ```
 
 Or install directly in one command:
 ```bash
 brew install saswatsam786/snapshell/snapshell
+```
+
+## Latest (HEAD)
+
+To build from the latest `main` branch:
+```bash
+brew reinstall --HEAD snapshell
 ```
 
 ## About SnapShell
@@ -69,7 +76,7 @@ sudo rm -rf /Library/Developer/CommandLineTools
 sudo xcode-select --install
 
 # Then try installation again
-brew install --HEAD snapshell
+brew install snapshell
 ```
 
 ### Build Issues
@@ -80,7 +87,7 @@ If the installation fails:
 brew cleanup && brew update
 
 # Try with verbose output for debugging
-brew install --HEAD snapshell --verbose
+brew install snapshell --verbose
 ```
 
 ## Links
