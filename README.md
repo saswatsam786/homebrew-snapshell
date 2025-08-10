@@ -13,6 +13,7 @@ brew install snapshell
 ```
 
 Or install directly in one command:
+
 ```bash
 brew install saswatsam786/snapshell/snapshell
 ```
@@ -20,6 +21,7 @@ brew install saswatsam786/snapshell/snapshell
 ## Latest (HEAD)
 
 To build from the latest `main` branch:
+
 ```bash
 brew reinstall --HEAD snapshell
 ```
@@ -44,7 +46,7 @@ After installation:
 # Start video sharing session (offerer)
 snapshell -signaled-o --room demo123 --server https://snapshell.onrender.com
 
-# Join video session (answerer)  
+# Join video session (answerer)
 snapshell -signaled-a --room demo123 --server https://snapshell.onrender.com
 ```
 
@@ -67,6 +69,7 @@ Update them from Software Update in System Settings.
 ```
 
 **Solution:**
+
 ```bash
 # Option 1: Update via System Settings
 # Go to System Settings > General > Software Update
@@ -82,6 +85,7 @@ brew install snapshell
 ### Build Issues
 
 If the installation fails:
+
 ```bash
 # Clean and update Homebrew
 brew cleanup && brew update
