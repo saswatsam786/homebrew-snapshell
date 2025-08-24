@@ -3,7 +3,7 @@ class Snapshell < Formula
   homepage "https://github.com/saswatsam786/snapshell"
   url "https://github.com/saswatsam786/snapshell/archive/v1.1.0.tar.gz"
   sha256 "b685627e08f084c0df8d0a300797a9dd071d2377d4f8725c1ea75ad2f959192b"
-  head "https://github.com/saswatsam786/snapshell.git", branch: "main"
+  url "https://github.com/saswatsam786/snapshell/archive/v1.2.0.tar.gz"
   license "MIT"
 
   depends_on "go" => :build
