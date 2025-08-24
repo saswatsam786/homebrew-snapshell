@@ -1,8 +1,8 @@
 class Snapshell < Formula
   desc "Real-time ASCII video sharing via WebRTC in your terminal"
   homepage "https://github.com/saswatsam786/snapshell"
-  url "https://github.com/saswatsam786/snapshell/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "b63eb7a9ec0c5e35c10f271cc0a88f74cfab523c76792c321a51ef84358f759d"
+  url "https://github.com/saswatsam786/snapshell/archive/v1.1.0.tar.gz"
+  sha256 "b685627e08f084c0df8d0a300797a9dd071d2377d4f8725c1ea75ad2f959192b"
   head "https://github.com/saswatsam786/snapshell.git", branch: "main"
   license "MIT"
 
@@ -24,7 +24,7 @@ class Snapshell < Formula
   def caveats
     <<~EOS
       🎥 SnapShell is now installed!
-      Stable version installed from tag v1.0.1. For latest development build:
+      Stable version installed from tag v1.1.0. For latest development build:
         brew reinstall --HEAD #{name}
 
       Quick Start:
